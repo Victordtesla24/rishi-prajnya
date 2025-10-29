@@ -1,0 +1,10 @@
+{
+  "name": "rishi-prajnya-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd nextjs_space && yarn dev",
+    "build": "cd nextjs_space && yarn build",
+    "start": "cd nextjs_space && yarn start"
+  }
+}

@@ -65,18 +65,18 @@ export default function ContactSection({ activeView }: ContactSectionProps) {
     {
       icon: Mail,
       label: 'Email',
-      value: 'info@futurewithAI.in',
-      href: 'mailto:info@futurewithAI.in'
+      value: 'melbvicduque@gmail.com',
+      href: 'mailto:melbvicduque@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91-9876543210',
-      href: 'tel:+919876543210'
+      value: '+91 99236 45679',
+      href: 'tel:+919923645679'
     },
     {
       icon: MapPin,
-      label: 'Location',
+      label: 'Head Office',
       value: 'Pune, Maharashtra, India',
       href: 'https://maps.google.com/?q=Pune,Maharashtra,India'
     }

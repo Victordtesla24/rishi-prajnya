@@ -1,0 +1,51 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/rishiprajnya_document/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model ContactInquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  role      String?
+  subject   String
+  message   String
+  formType  String   @default("general") // general, partnership, investment, technical
+  status    String   @default("new") // new, read, responded, archived
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_inquiries")
+}
+
+model DocumentDownload {
+  id         String   @id @default(cuid())
+  email      String?
+  documentType String  // cost_analysis, technical_spec, full_document
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@map("document_downloads")
+}
+
+model InteractionAnalytics {
+  id           String   @id @default(cuid())
+  sessionId    String
+  elementType  String   // view_toggle, section_expand, chart_interaction
+  elementId    String
+  action       String   // click, hover, toggle, expand
+  duration     Int?     // time spent in milliseconds
+  ipAddress    String?
+  userAgent    String?
+  createdAt    DateTime @default(now())
+
+  @@map("interaction_analytics")
+}

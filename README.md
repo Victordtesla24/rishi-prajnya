@@ -11,40 +11,39 @@ RishiPrajnya is an AI-powered career guidance platform designed to revolutionize
 
 ```
 rishi-prajnya/
-├── nextjs_space/              # Next.js application root
-│   ├── app/                   # App directory (Next.js 13+ App Router)
-│   │   ├── api/              # API routes
-│   │   │   └── contact/      # Contact form API
-│   │   ├── globals.css       # Global styles
-│   │   ├── layout.tsx        # Root layout
-│   │   └── page.tsx          # Homepage
-│   ├── components/           # React components
-│   │   ├── ui/              # Shadcn UI components
-│   │   ├── ArchitectureLayers.tsx
-│   │   ├── ContactSection.tsx
-│   │   ├── CostEvidence.tsx
-│   │   ├── ExecutiveSummary.tsx
-│   │   ├── FinancialCharts.tsx
-│   │   ├── FloatingActionButton.tsx
-│   │   ├── HeroSection.tsx
-│   │   ├── ImplementationRoadmap.tsx
-│   │   ├── Navigation.tsx
-│   │   ├── ScrollProgress.tsx
-│   │   └── TeamSection.tsx
-│   ├── lib/                  # Utility libraries
-│   │   ├── db.ts            # Database configuration
-│   │   ├── types.ts         # TypeScript type definitions
-│   │   └── utils.ts         # Utility functions
-│   ├── prisma/              # Prisma ORM
-│   │   └── schema.prisma    # Database schema
-│   ├── public/              # Static assets
-│   │   ├── favicon.svg
-│   │   ├── og-image.png
-│   │   └── robots.txt
-│   ├── package.json         # Dependencies and scripts
-│   ├── tailwind.config.ts   # Tailwind CSS configuration
-│   ├── tsconfig.json        # TypeScript configuration
-│   └── vercel.json          # Vercel deployment configuration
+├── app/                       # App directory (Next.js 13+ App Router)
+│   ├── api/                  # API routes
+│   │   └── contact/          # Contact form API
+│   ├── globals.css           # Global styles
+│   ├── layout.tsx            # Root layout
+│   └── page.tsx              # Homepage
+├── components/               # React components
+│   ├── ui/                  # Shadcn UI components
+│   ├── ArchitectureLayers.tsx
+│   ├── ContactSection.tsx
+│   ├── CostEvidence.tsx
+│   ├── ExecutiveSummary.tsx
+│   ├── FinancialCharts.tsx
+│   ├── FloatingActionButton.tsx
+│   ├── HeroSection.tsx
+│   ├── ImplementationRoadmap.tsx
+│   ├── Navigation.tsx
+│   ├── ScrollProgress.tsx
+│   └── TeamSection.tsx
+├── lib/                      # Utility libraries
+│   ├── db.ts                # Database configuration
+│   ├── types.ts             # TypeScript type definitions
+│   └── utils.ts             # Utility functions
+├── prisma/                  # Prisma ORM
+│   └── schema.prisma        # Database schema
+├── public/                  # Static assets
+│   ├── favicon.svg
+│   ├── og-image.png
+│   └── robots.txt
+├── package.json             # Dependencies and scripts
+├── tailwind.config.ts       # Tailwind CSS configuration
+├── tsconfig.json            # TypeScript configuration
+├── vercel.json              # Vercel deployment configuration
 └── README.md                # This file
 ```
 
@@ -76,7 +75,7 @@ rishi-prajnya/
 
 ```bash
 git clone https://github.com/Victordtesla24/rishi-prajnya.git
-cd rishi-prajnya/nextjs_space
+cd rishi-prajnya
 ```
 
 ### 2. Install Dependencies
@@ -87,7 +86,7 @@ yarn install
 
 ### 3. Environment Variables
 
-Create a `.env.local` file in the `nextjs_space` directory:
+Create a `.env.local` file in the project root:
 
 ```bash
 # Database
@@ -115,7 +114,6 @@ yarn prisma db seed
 ### Start Development Server
 
 ```bash
-cd nextjs_space
 yarn dev
 ```
 

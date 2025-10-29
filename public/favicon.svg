@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#152d47;stop-opacity:1"/>
+</linearGradient>
+<linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#E8C547;stop-opacity:1"/>
+<stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#C19B2B;stop-opacity:1"/>
+</linearGradient>
+</defs>
+<circle cx="128" cy="128" r="128" fill="url(#bg)"/>
+<circle cx="128" cy="128" r="110" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.3"/>
+<text x="128" y="168" font-family="Arial, sans-serif" font-size="120" font-weight="700" fill="url(#gold)" text-anchor="middle" letter-spacing="-8">RP</text>
+</svg>
